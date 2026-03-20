@@ -26,6 +26,20 @@ export default function SeniorPage() {
     } finally {
       setIsLoading(false);
     }
+
+    // handleTakePill 함수 내부에 추가
+    const speak = (msg: string) => {
+      const speech = new SpeechSynthesisUtterance(msg);
+      speech.lang = 'ko-KR';
+      speech.rate = 0.8; // 천천히 읽어드림
+      window.speechSynthesis.speak(speech);
+    };
+
+    // 버튼 클릭 시 호출
+    const onButtonClick = async () => {
+      await handleTakePill();
+      speak("약 복용이 확인되었습니다. 오늘 하루도 건강하세요!");
+    };
   };
 
   return (

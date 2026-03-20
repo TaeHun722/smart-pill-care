@@ -65,6 +65,22 @@ export default function GuardianPage() {
         {/* 카드 그리드 영역 */}
         <div className="grid md:grid-cols-2 gap-8">
           
+          {/* 대시보드 상단에 추가할 요약 정보 */}
+          <div className="grid grid-cols-3 gap-4 mb-10 text-center">
+            <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
+              <p className="text-slate-500 text-sm mb-1">복약 성공률</p>
+              <p className="text-2xl font-black text-blue-600">85%</p>
+            </div>
+            <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
+              <p className="text-slate-500 text-sm mb-1">미복약 횟수</p>
+              <p className="text-2xl font-black text-red-500">2회</p>
+            </div>
+            <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
+              <p className="text-slate-500 text-sm mb-1">활동 점수</p>
+              <p className="text-2xl font-black text-purple-600">92점</p>
+            </div>
+          </div>
+          
           {/* 복약 상태 카드 */}
           <div className="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 relative overflow-hidden group hover:shadow-md transition-shadow">
             <div className="absolute top-0 left-0 w-3 h-full bg-blue-500"></div>
