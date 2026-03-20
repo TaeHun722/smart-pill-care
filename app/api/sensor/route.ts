@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { supabase } from '../lib/supabase'; // 폴더 깊이에 따라 상대경로 주의 (src/lib/supabase.ts 기준)
+import { supabase } from '../../lib/supabase'; // 폴더 깊이에 따라 상대경로 주의 (src/lib/supabase.ts 기준)
 
 // 하드웨어에서 HTTP POST 요청을 보낼 때 실행되는 함수
 export async function POST(request: Request) {

@@ -1,8 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* 배경이 무조건 흰색/밝은색으로 나오도록 기본 속성 추가 */
+/* 아래는 배경색만 살짝 잡아주는 기본 코드입니다. */
 body {
   background-color: #f9fafb;
   color: #111827;
